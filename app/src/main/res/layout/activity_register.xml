@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bd">
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="10dp"
+        android:background="@color/colorPrimary">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/bd"
+        android:layout_marginRight="10dp">
+        <EditText
+            android:id="@+id/nameEdit"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:hint="Enter Your Name"
+            android:inputType="textPassword"
+            android:layout_marginTop="10dp"/>
+        <EditText
+            android:id="@+id/emailEdit"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:hint="Enter your Email"
+            android:inputType="textEmailAddress"
+            android:layout_marginTop="10dp">
+
+        </EditText>
+        <EditText
+            android:id="@+id/passwordEdit"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:hint="Enter Your Password"
+            android:inputType="textPassword"
+            android:layout_marginTop="10dp"/>
+        <EditText
+            android:id="@+id/contactEdit"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:hint="Enter Your contact"
+            android:inputType="textPassword"
+            android:layout_marginTop="10dp"/>
+
+
+        <Button
+            android:id="@+id/btn"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:text="Register"
+            android:textSize="15sp"
+            android:layout_marginTop="10dp"/>
+    </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

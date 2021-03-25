@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Hospitalregfrom">
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="10dp"
+        android:background="@color/colorPrimary">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/plus2"
+            tools:ignore="MissingConstraints">
+            <EditText
+                android:id="@+id/nameEdit"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:hint="Enter Hospital Name"
+
+                android:inputType="textPersonName"
+                android:layout_marginTop="20dp"/>
+            <EditText
+                android:id="@+id/emailEdit"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:hint="Enter Hospital Email"
+
+                android:inputType="textEmailAddress"
+                android:layout_marginTop="10dp">
+
+            </EditText>
+            <EditText
+                android:id="@+id/contactEdit"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:hint="Enter Hospital contact"
+                android:inputType="phone"
+
+                android:layout_marginTop="10dp"/>
+            <Spinner
+                android:id="@+id/spinner"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="10dp"/>
+
+            <EditText
+                android:id="@+id/cityedit"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:hint="Enter Hospital City"
+                android:inputType="text"
+
+                android:layout_marginTop="10dp">
+
+            </EditText>
+            <Spinner
+                android:id="@+id/spinner1"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="10dp"/>
+            <Button
+                android:id="@+id/btn"
+                android:layout_width="380dp"
+                android:layout_height="55dp"
+                android:text="Register"
+               android:gravity="center"
+                android:background="@color/brown"
+                android:textSize="15sp"
+                android:layout_marginTop="10dp"/>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

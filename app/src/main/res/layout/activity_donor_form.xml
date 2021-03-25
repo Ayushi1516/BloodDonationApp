@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DonorForm"
+    android:background="@drawable/give"
+    android:layout_gravity="center">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            tools:ignore="MissingConstraints">
+            <EditText
+                android:id="@+id/nameEdit"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:hint="Enter Your Name"
+                android:inputType="textPersonName"
+                android:layout_marginTop="20dp"/>
+            <EditText
+                android:id="@+id/emailEdit"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:hint="Enter Your Email"
+                android:inputType="textEmailAddress"
+                android:layout_marginTop="10dp">
+
+            </EditText>
+            <EditText
+                android:id="@+id/contactEdit"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:hint="Enter Your contact"
+                android:inputType="phone"
+                android:layout_marginTop="10dp"/>
+
+            <RadioGroup
+                android:id="@+id/gender"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp">
+                <RadioButton
+                    android:id="@+id/male"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Male"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginEnd="25dp"
+                    android:layout_weight="1"/>
+                <RadioButton
+                    android:id="@+id/female"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Female"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginEnd="25dp"
+                    android:layout_weight="1"/>
+
+            </RadioGroup>
+
+            <Spinner
+                android:id="@+id/spinner"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="10dp"/>
+
+            <EditText
+                android:id="@+id/cityedit"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:hint="Enter Your City"
+                android:inputType="text"
+                android:layout_marginTop="10dp">
+
+            </EditText>
+            <Spinner
+                android:id="@+id/spinner1"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="10dp"/>
+            <Button
+                android:id="@+id/btn"
+                android:layout_width="380dp"
+                android:layout_height="55dp"
+                android:text="Register"
+                android:textColor="@color/colorPrimary"
+                android:background="@color/brown"
+                android:textSize="15sp"
+                android:layout_marginTop="10dp"/>
+        </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

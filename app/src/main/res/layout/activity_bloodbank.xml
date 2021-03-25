@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Bloodbank">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:orientation="vertical"
+        >
+        <ViewFlipper
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:autoStart="true"
+            android:flipInterval="3000"
+            android:inAnimation="@android:anim/fade_in"
+            android:outAnimation="@android:anim/fade_out">
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/bb"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/bb2"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/bloodbank"/>
+        </ViewFlipper>
+
+        <TextView
+            android:id="@+id/bbform"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/view"
+            android:layout_marginTop="40dp"
+             android:text="Register As a Blood Bank"
+            android:textSize="20sp"
+            android:textAlignment="center"
+            android:textColor="@color/dark"
+            />
+        <TextView
+            android:id="@+id/searchbb"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/view"
+            android:layout_marginTop="40dp"
+            android:textAlignment="center"
+            android:text="Search for BloodBank"
+            android:textSize="20sp"
+            android:textColor="@color/dark"
+            />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
